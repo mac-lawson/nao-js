@@ -138,6 +138,14 @@
           <img src="img/right.png" style="width:60px;height:60px;" />
           <div>move right</div>
         </button>
+        <!-- REMOVE ME -->
+        <!-- THIS IS UNEEDED -->
+        <button onclick="RobotDance('salsa')">
+          <img src="img/right.png" style="width:60px;height:60px;" />
+          <div>Salsa Dance</div>
+        </button>
+        <!-- END OF UNEEDED BUTTON -->
+
       </div>
       <div style="display:inline-block;vertical-align:top;">
         <button onclick="jsnao.al_motion.openHand('RHand');">
@@ -184,5 +192,22 @@
     <legend id="LogLevel" onclick="jsnao.level_logs();" title="Click to change Logs Level" style="cursor:pointer;margin-left:10px;">Logger Level : INFO</legend>
     <div id="DivLogger"></div>
   </fieldset>
+
+  <script>
+    
+
+
+// REMOVE ME
+function RobotDance(dance) {
+  if(dance == "salsa") {
+    jsnao.al_motion.moveTo(0.1, 0.0, 0.0);
+    jsnao.al_motion.moveTo(-0.1, 0.0, 0.0);
+    jsnao.al_motion.moveTo(0.0, 0.1, 0.0);
+    jsnao.al_motion.moveTo(0.0, -0.1, 0.0);
+  }
+
+
+}
+  </script>
 </body>
 </html>
